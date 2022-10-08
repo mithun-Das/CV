@@ -1,0 +1,194 @@
+%-------------------------
+% Resume in Latex
+% Author : Shubhi Rani
+% License : MIT
+%------------------------
+
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+%\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,      
+    urlcolor=blue,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-3pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Mithun Das}}  & Email : \href{mailto:mithun.das227@gmail.com}{ mithun.das227@gmail.com}\\
+  {LinkedIn}\href{https://www.linkedin.com/in/mithun-das-4412948a/}{(Link)} &  Mobile : +8801833994177 \\
+  %\href{https://github.com/shubhi28}{Github: https://github.com/shubhi28} \\
+\end{tabular*}
+
+%----------SUMMARY-----------------
+
+\section{Summary}
+      Passionate software engineer with 4+ years of experience involved in the development of successfully delivered B2B applications implementing the standard software development procedure and cutting-edge technologies. 
+
+%--------PROGRAMMING SKILLS------------
+\section{\large Skills Summary}
+	\resumeSubHeadingListStart
+    	\resumeSubItem{Languages}{C, C\#, JavaScript, TypeScript}
+    	\resumeSubItem{Frontend Framework}{Angular, Angular Material, Bootstrap}
+    	\resumeSubItem{Backend Framework}{.NET Core}
+    	\resumeSubItem{Database}{SQL(MSSQL), NoSQL(MongoDB)}
+    	\resumeSubItem{Collaboration Tools}{Git, JIRA, Hubstaff }
+    \resumeSubHeadingListEnd
+
+
+
+%-----------EXPERIENCE-----------------
+\section{\large Work Experience}
+  \resumeSubHeadingListStart
+
+\resumeSubheading
+	{WebCreek}{The Woodlands, USA}
+	{Full-stack(Angular, .NET Core) Software Engineer(Remote Job)}{July 2022 -  Present}
+    \begin{itemize}
+      \item Build products for US-based industrial equipment dealerships company where we provide digital solutions for their entire operations.
+      \item Developed products with ASP.NET Zero framework and MSSQL database.
+      \item Work with a diverse work culture where our members are from 15+ different countries.
+    \end{itemize}
+    
+    \vspace{2mm}
+    \resumeSubheading
+    {SELISE Digital Platforms}{Zurich, Switzerland}
+    {Full-stack(Angular, .NET Core) Software Engineer(Dhaka office)}{Oct 2017 - Aug 2022}
+    \begin{itemize}
+          \item Developed digital products for some renowned European insurance companies where our products were greatly appreciated and were frequently used by our clients.
+          \item Automated some complex calculations system like pooling simulation which used to take huge time before our solution.
+          \item Worked as a team lead for some particular features and designed databases(MongoDB) for large systems.
+          \item Worked on micro-service architecture and generic-based application development environment.
+    \end{itemize}
+
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Shahjalal University of Science and Technology, Sylhet}{Jan 2013 - Oct 2017}
+      {B.Sc.(Engineering) in Computer Science and Engineering;  GPA: 3.25 out of 4.00}{}
+      
+    \vspace{2mm} 
+    \resumeSubheading
+      {Govt. City College, Chittagong}{Oct 2010 - Aug 2012}
+      {Higher Secondary School Certificate(Science Group);  Grade: 5.00 out of 5.00}{}
+      
+    \vspace{2mm}  
+    \resumeSubheading
+      {Saint Placid's High School, Chittagong}{Jan 2006 - Mar 2010}
+      {Secondary School Certificate(Science Group);  Grade: 5.00 out of 5.00}{}
+  \resumeSubHeadingListEnd
+
+%-----------Undergraduate Thesis-----------------
+\section{Undergraduate Thesis}
+\resumeSubHeadingListStart
+\resumeSubItem{Sachetan “A crowdsource based safety application”}{making a. system which will show a safe path from current location to destination on google map and shows the statistical and analytical reports of dangerous accidents such as mugging, robbery, theft, sexual harassment take place for a specific area.(Published in springer 2019 conference India) }
+\resumeSubHeadingListEnd
+    
+%-----------Programming And Problem Solving Activities-----------------
+\section{Programming And Problem Solving Activities}
+    
+    \begin{itemize}[leftmargin=10pt, noitemsep]
+        \item 367 UVA Problems solved (username: mithun\_SUST).
+        \item Regular codeforce contestant during 2014-2015 (username: Mithun\_SUST)
+        \item 70+ problems solved at LightOj (username: Mithun Das)
+        \item 100+ problems solved at Hackerrank (username: mithun\_sust)
+        \item Regular programming contestant at University during 2013-2015
+    \end{itemize}
+
+%-----------Extra Co-Curricular Activities-----------------
+
+\section{Extra Co-Curricular Activities}
+\begin{itemize}[leftmargin=10pt, noitemsep]
+    \item Data Science Enthusiast (Kaggle certification links are attached below):
+    \begin{itemize}
+        \item {Python Course Certification} \href{https://www.kaggle.com/learn/certification/mithundas/python} {(Link)}
+        \item {Introductory Machine Learning}
+        \href {https://www.kaggle.com/learn/certification/mithundas/intro-to-machine-learning}{(Link)}
+        \item  {Intermediate Machine Learning} \href{https://www.kaggle.com/learn/certification/mithundas/intermediate-machine-learning} {(Link)}
+    \end{itemize}
+    
+    \item Story writer in Medium \href {https://medium.com/@mithun.das227} {(Link)}
+\end{itemize}
+
+%-------------------------------------------
+\end{document}
